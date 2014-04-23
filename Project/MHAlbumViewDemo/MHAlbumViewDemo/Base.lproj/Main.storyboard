@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qKq-Sa-1Ss"/>
+                        <viewControllerLayoutGuide type="bottom" id="UJe-dn-bY7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-pA-Z1b" customClass="MHAlbumView">
+                                <rect key="frame" x="10" y="20" width="300" height="241"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-Ph-q7G" customClass="MHAlbumView">
+                                <rect key="frame" x="10" y="307" width="300" height="241"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21n-47-Qsu">
+                                <rect key="frame" x="180" y="269" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.72549019607843135" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="IYK-ee-fIa"/>
+                                    <constraint firstAttribute="height" constant="30" id="mo3-p0-HDE"/>
+                                </constraints>
+                                <state key="normal" title="Set second image">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setSecondImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YMA-Hb-sz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqk-8l-ie8">
+                                <rect key="frame" x="10" y="269" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.72549019607843135" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bdj-02-0bM"/>
+                                    <constraint firstAttribute="width" constant="130" id="j5y-IL-zDI"/>
+                                </constraints>
+                                <state key="normal" title="Set first image">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setFirstImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x3J-ba-yuc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cqk-8l-ie8" secondAttribute="centerY" id="4II-5a-O8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="CEM-pA-Z1b" secondAttribute="trailing" constant="10" id="76J-am-Hs2"/>
+                            <constraint firstItem="hZg-Ph-q7G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="BtX-7n-blb"/>
+                            <constraint firstItem="CEM-pA-Z1b" firstAttribute="top" secondItem="qKq-Sa-1Ss" secondAttribute="bottom" id="G6b-kq-X0c"/>
+                            <constraint firstAttribute="trailing" secondItem="21n-47-Qsu" secondAttribute="trailing" constant="10" id="GXC-64-AyI"/>
+                            <constraint firstItem="cqk-8l-ie8" firstAttribute="top" secondItem="CEM-pA-Z1b" secondAttribute="bottom" constant="8" id="OFC-3B-gxu"/>
+                            <constraint firstItem="hZg-Ph-q7G" firstAttribute="top" secondItem="cqk-8l-ie8" secondAttribute="bottom" constant="8" id="Tj3-LV-mog"/>
+                            <constraint firstAttribute="trailing" secondItem="hZg-Ph-q7G" secondAttribute="trailing" constant="10" id="VgR-vH-CWF"/>
+                            <constraint firstItem="UJe-dn-bY7" firstAttribute="top" secondItem="hZg-Ph-q7G" secondAttribute="bottom" constant="20" id="cJA-Ig-DeD"/>
+                            <constraint firstItem="21n-47-Qsu" firstAttribute="leading" secondItem="cqk-8l-ie8" secondAttribute="trailing" constant="40" id="iDh-9h-f3D"/>
+                            <constraint firstItem="hZg-Ph-q7G" firstAttribute="top" secondItem="21n-47-Qsu" secondAttribute="bottom" constant="8" id="nGk-bQ-MAX"/>
+                            <constraint firstItem="21n-47-Qsu" firstAttribute="top" secondItem="CEM-pA-Z1b" secondAttribute="bottom" constant="8" id="sRk-W3-N6f"/>
+                            <constraint firstItem="CEM-pA-Z1b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="vbQ-Rw-8oo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumView1" destination="CEM-pA-Z1b" id="sB7-fL-vb0"/>
+                        <outlet property="albumView2" destination="hZg-Ph-q7G" id="Md6-SU-13i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
