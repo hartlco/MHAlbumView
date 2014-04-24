@@ -1,5 +1,7 @@
 # MHAlbumView
 
+[![Build Status](https://travis-ci.org/mhaddl/MHAlbumView.svg?branch=master)](https://travis-ci.org/mhaddl/MHAlbumView)
+
 ## Usage
 
 A UIImageView subclass, which shows a spinning UIActivityIndicator as long as it's image property is nil. Additionally you can attach a action-block which gets fired when the image is tapped.
