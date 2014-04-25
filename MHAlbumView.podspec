@@ -1,7 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "MHAlbumView"
   s.version          = "0.1.0"
-  s.summary          = "A UIImageView subclass, which shows a UIActivityIndicator when it's image property is nil. Additionally you can attach a action-block for tapping the image "
+  s.description      = "A UIImageView subclass, which shows a UIActivityIndicator when it's image property is nil. Additionally you can attach a action-block for tapping the image "
+  s.summary			 = "UIImageView subclass: if image->nil show spinning UIAcitivtyIndicatorView"
   s.homepage         = "http://mhaddl.me"
   s.license          = 'MIT'
   s.author           = { "Martin Hartl" => "martin@mhaddl.me" }
