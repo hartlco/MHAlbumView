@@ -1,7 +1,3 @@
-before_install:
-  - brew update
-  - brew upgrade xctool
-
 language: objective-c
 xcode_project: Project/MHAlbumViewDemo/MHAlbumViewDemo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: MHAlbumViewTests
